@@ -24,24 +24,26 @@
     </div>
     <div class="container">
       <div class="container__left framed-golden-2">
+        <h2>Player</h2>
         <div class="scoreboard frame">
-          <span id="score-points">win: 0 | lose: 0</span>
+          <p>Win:<span class="score-player"></span></p>
+          <p>Lose:<span class="score-computer"></span></p>
         </div>
         <div class="avatar">
-          <img id="card-image" />
+          <img id="card_image" />
         </div>
         <div class="card-details frame">
           <p id="card_name">a</p>
           <p id="card_type">a</p>
         </div>
       </div>
-      <div class="container__right">
+      <div class="container__duelfield">
         <div class="card-box-container">
           <div class="card-box framed" id="computer-cards"></div>
           <div class="card-versus-container">
             <div class="versus-top">
               <div class="card-infield">
-                <img id="computer-field-card" height="180px" width="125px" />
+                <img id="player-field-card" height="180px" width="125px" />
               </div>
               <img
                 class="computer-field-card"
@@ -49,16 +51,35 @@
                 src="/src/assets/icons/millenium2.png"
               />
               <div class="card-infield">
-                <img id="player-field-card" height="180px" width="125px" />
+                <img id="computer-field-card" height="180px" width="125px" />
               </div>
             </div>
             <div class="versus-bottom">
-              <button id="next-duel" class="rpgui-button"
-              onclick="resetDuel()"
-              >Ganhou</button>
+              <button
+                id="next-duel"
+                class="rpgui-button"
+                onclick="resetDuel()"
+                ;
+              >
+                Ganhou
+              </button>
             </div>
           </div>
           <div class="card-box framed" id="player-cards"></div>
+        </div>
+      </div>
+      <div class="container__right framed-golden-2">
+        <h2>Computer</h2>
+        <div class="scoreboard frame">
+          <p>Win:<span class="score-computer"></span></p>
+          <p>Lose:<span class="score-player"></span></p>
+        </div>
+        <div class="avatar">
+          <img id="card_image_computer" />
+        </div>
+        <div class="card-details frame">
+          <p id="card_name_computer">a</p>
+          <p id="card_type_computer">a</p>
         </div>
       </div>
     </div>
